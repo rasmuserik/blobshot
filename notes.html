@@ -12,17 +12,17 @@
             <li>Tree matching and templating for use in macro system, + syntax-constructs in a new scripting language</li>
             <li>HTML5/Blackberry arcade game</li>
         </ul>
+        <h2>Arcade game from scratch</h2>
+        <p>Written in a new programming language on top of html5</p>
+        <p><a href="http://solsort.dk/blobshot">http://solsort.dk/blobshot</a></p>
+        <p><a href="https://github.com/rasmuserik/yolan/blob/master/src/blobshot.yl">github:rasmuserik/yolan/src/blobshot.yl</a></p>
         <h2>Tree-matching + templating</h2>
+        <p>Utilities for macros</p>
         <p>Language: minimalistic JavaScript/Lisp bastard, for meta-programming and domain specific languages.</p>
         <p>Compiles to JavaScript. Compiler written in the language itself</p>
         <hr />
-        <ul>
-            <li>Tree matching function</li>
-            <li>Tree template function</li>
-            <li>Macro utilities and new syntactic constructs</li>
-        </ul>
-        <hr />
 
+        <h3>Why</h3>
         <p>Old increment syntax</p>
         <pre>
         [set i [i + 1]]
@@ -37,11 +37,14 @@
             '[inc ?var]
             '[set ?var [?var + 1]]]
         </pre>
+        <h3>What?</h3>
+        <ul>
+            <li>Tree matching function</li>
+            <li>Tree template function</li>
+            <li>Macro utilities and new syntactic constructs</li>
+        </ul>
+        <hr />
         <p>→ All occurrences of <tt>[set i [i + 1]]</tt> and similar in code changed automagically to <tt>[inc i]</tt></p>
-        <h2>Arcade game from scratch</h2>
-        <p>Written in the new language on top of html5</p>
-        <p><a href="http://solsort.dk/blobshot">http://solsort.dk/blobshot</a></p>
-        <p><a href="https://github.com/rasmuserik/yolan/blob/master/src/blobshot.yl">github:rasmuserik/yolan/src/blobshot.yl</a></p>
 
     </body>
 </html>
