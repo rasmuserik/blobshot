@@ -32,6 +32,35 @@ i=(i+1)
 };
 return true
 };
+match["template"]=function(pattern,subst){
+if(!(subst)){
+return undefined
+}else{
+
+};
+if((typeof pattern==="string")){
+if((pattern[0]==="?")){
+return subst[pattern.slice(1)]
+}else{
+
+};
+return pattern
+}else{
+
+};
+var result=[];
+var i=0;
+while((i<pattern["length"])){
+var val=pattern[i];
+if((typeof val["string"]&&(val.slice(0,3)==="..."))){
+result=result.concat(subst[val.slice(3)])
+}else{
+result.push(match.template(val,subst))
+};
+i=(i+1)
+};
+return result
+};
 match["pattern"]=function(pattern,obj,ctx){
 ctx=(ctx||{
 
@@ -122,5 +151,14 @@ console.log(match.pattern(["...a","bar","...a"],["foo","bar","foo"]));
 console.log(match.pattern(["...a","quuz","...b"],["foo","bar","baz"]));
 console.log(match.pattern(["?a","?b"],["foo","bar"]));
 console.log(match.pattern(["?a","?a"],["foo","bar"]));
-console.log(match.pattern(["?a","?a"],["foo","foo"]))
+console.log(match.pattern(["?a","?a"],["foo","foo"]));
+console.log(match.template("?a",{
+"a":"foobar"
+}));
+console.log(match.template(["?a",["?a"]],{
+"a":"foobar"
+}));
+console.log(JSON.stringify(match.template(["...a",["def","?b","?c"],["while",["?b","<","?d"],"...e",["inc","?b"]],"...f"],{
+"a":[],"b":"i","c":0,"d":10,"e":[["console","log","'","hello","i"]],"f":[]
+})))
 }});
