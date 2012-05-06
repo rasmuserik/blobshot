@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+   xmlns:rim="http://www.blackberry.com/ns/widgets" 
+   version="1.0.0.0" rim:header="BlobShot">
+
+
+<name>BlobShot</name>
+<content src="index.html"/>
+<description>Arcade game of shooting red blobs with green blobs, to avoid that they break through your wall</description>
+
+<author href="http://rasmuserik.com/">Rasmus Erik Voel Jensen</author>
+<icon src="icon.png" />
+
+<rim:orientation mode="landscape" />
+<rim:loadingScreen backgroundImage="splash.png" />
+
+</widget>
