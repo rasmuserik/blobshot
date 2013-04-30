@@ -1,5 +1,4 @@
-blobshot
-========
+## ![logo](https://solsort.com/_logo.png) blobshot
 
 HTML5/Blackberry arcade game for the http://hackathon.5apps.com
 
