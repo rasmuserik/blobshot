@@ -6,6 +6,7 @@
 
     <name>Blobshot</name>
 
+    <shortdescription>Simple game prototype from hackathon</shortdescription>
     <description>
         Red blobs are attacking and you have to help the green blobs to keep them at bay for as long as possible. 
         Simple arcade game, created during the weekend hackathon at 5apps in Berlin, and (open source) code available at http://github.com/rasmuserik/.
