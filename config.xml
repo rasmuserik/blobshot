@@ -5,6 +5,7 @@
         version   = "1.0.0">
 
     <name>Blobshot</name>
+    <date>2012-05</date>
 
     <shortdescription>Simple game prototype from hackathon</shortdescription>
     <description>
